@@ -15,8 +15,11 @@ export function createSplit(el, args) {
       gutterSize: 7,
       elementStyle(dimension, size, gutterSize) {
         let amount = `calc(${size}% - ${gutterSize}px)`;
-        let props = { 'flex-basis': amount };
-        props[isVertical ? 'max-height' : 'max-width'] = amount
+        let props = {
+          'flex-basis': amount,
+          [isVertical ? 'max-height' : 'max-width']: amount
+        };
+
         return props;
       },
       gutterStyle(dimension, gutterSize) {
