@@ -1,7 +1,7 @@
 ember-split-view-modifier
 ==============================================================================
+Ember element modifier that turns all child elements into resizeable split views. It uses [Split.js] https://split.js.org/
 
-[Short description of the addon.]
 
 
 Compatibility
@@ -22,7 +22,15 @@ ember install ember-split-view-modifier
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```hbs
+
+<div {{split-view}} class="your-container-class">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+```
 
 
 Contributing

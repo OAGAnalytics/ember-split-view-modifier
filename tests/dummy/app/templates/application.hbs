@@ -1,3 +1,10 @@
-<h2 id="title">Welcome to Ember</h2>
+<div {{split-view sizes=(array 25 25 50) minSize=(array 20 20 20)}} class="half-height">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col4"></div>
+</div>
 
-{{outlet}}
+<div {{split-view direction="vertical"}} class="half-height">
+  <div class="col3"></div>
+  <div class="col4"></div>
+</div>
