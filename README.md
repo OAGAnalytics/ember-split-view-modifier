@@ -16,7 +16,7 @@ Usage
 
 ```hbs
 
-<div {{split-view}} class="your-container-class">
+<div {{split-view sizes=(array 25 25 50)}} class="your-container-class">
   <div></div>
   <div></div>
   <div></div>
