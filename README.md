@@ -1,6 +1,6 @@
-ember-split-view-modifier [![Ember Observer Score](http://emberobserver.com/badges/ember-split-view-modifier.svg)](http://emberobserver.com/addons/ember-split-view-modifier) [![npm version](https://badge.fury.io/js/ember-split-view-modifier.svg)](https://badge.fury.io/js/ember-split-view-modifier) [![travis status](https://travis-ci.org/bekzod/ember-split-view-modifier.svg)](https://travis-ci.org/bekzod/ember-split-view-modifier.svg)
+ember-split-view-modifier [![Ember Observer Score](http://emberobserver.com/badges/ember-split-view-modifier.svg)](http://emberobserver.com/addons/ember-split-view-modifier) [![npm version](https://badge.fury.io/js/ember-split-view-modifier.svg)](https://badge.fury.io/js/ember-split-view-modifier) [![travis status](https://travis-ci.org/OAGAnalytics/ember-split-view-modifier.svg)](https://travis-ci.org/OAGAnalytics/ember-split-view-modifier.svg)
 ==============================================================================
-Ember element modifier `{{split-view}}` that turns all child elements into resizeable split views. It uses [Split.js](https://split.js.org/) under the hood.
+Ember element modifier `{{split-view}}` that turns all child elements into resizeable split views. It uses [Split.js](https://split.js.org/) under the hood. [DEMO](http://ember-split-view-modifier.surge.sh/)
 
 
 Installation
@@ -16,7 +16,7 @@ Usage
 
 ```hbs
 
-<div {{split-view}} class="your-container-class">
+<div {{split-view sizes=(array 25 25 50)}} class="your-container-class">
   <div></div>
   <div></div>
   <div></div>
