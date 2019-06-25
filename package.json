@@ -7,7 +7,7 @@
     "ember-element-modifier",
     "ember-modifier"
   ],
-  "repository": "https://github.com/OaGAnalytics/ember-split-view-modifier",
+  "repository": "https://github.com/OAGAnalytics/ember-split-view-modifier",
   "license": "MIT",
   "author": "bekzod@me.com",
   "directories": {
