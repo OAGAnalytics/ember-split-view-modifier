@@ -1,6 +1,6 @@
 {
   "name": "ember-split-view-modifier",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "{{split-view}} element modifier",
   "keywords": [
     "ember-addon",
