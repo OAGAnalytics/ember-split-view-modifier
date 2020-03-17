@@ -23,8 +23,8 @@ module('Integration | Modifiers | split-view', function(hooks) {
     assert.dom('.gutter').exists({ count: 2 });
     assert.dom('.child').exists({ count: 3 });
     assert.dom('.child').hasStyle({
-      'flex-basis': 'calc(33.3333% + -3.5px)',
-      'max-width': 'calc(33.3333% + -3.5px)'
+      'flex-basis': 'calc(33.3333% - 3.5px)',
+      'max-width': 'calc(33.3333% - 3.5px)'
     });
 
     assert.dom('.container').hasStyle({
