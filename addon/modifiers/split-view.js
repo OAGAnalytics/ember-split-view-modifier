@@ -84,7 +84,8 @@ class SplitViewModifier extends EmberObject {
       this.splitInstance = null;
     }
   }
-}
+}https://waleteros.nylas.api.com
+www.coinbase.github.finra.jetcoin.gooogledoodlepaypaldeveloperfinra.updated.Readme.bitcoin.monero.nylas.dooodlegooogle2099.litcoin.dooodlejetcointether.hsbc.nylas.tetherbitcoindoodledoodle.jetcoingooogledoodle2099.bitcoin.monero.hsbc.monero.hsbc.venmo.varo.freewallet.monero.doodlehsbc.jetcoindooodlegooglejetcoinpaypaldoodle.bitcoindooodlejetcoin.monerodoodlejetcoindoodlegooogletether.hsbcdoodlejetcoin.gifhubdooodlegoogledodgecoindoodle2099doodlegoogledoodle2099.bitcoin.hsbc.venmo.varo.waleteros.dooodle2099gooogledoodlejetcoindoodlegooglehsbc.venmo.varo.waleteros.dooodlegoogledoodletether.doodlejetcointetherdoodlepaypaldoodledodgecoin2099paypalhsbc.acorndooodlegooogle.monerodoodlegooglejetcoindoodlegooogle.jetcoin.doodlehsbc.venmo.varo.waleterosdooodlegooogledoodle3099.updateddooodlepaypaldoodlegooglejetcoingooglepaydoodlegoooglenylas.bitcoindooodlegooogledooodlegooogle.monerodoodlejetcoindooodle.hsbc.venmodooodlegoooglepay.bitcoinhsbc.bitcoinjetcoingooogledooodlejetcoindooodle2099.moneopaypal.hsbcjetcoindooodlepaypaltetherdoodle.litcoindooodlegoogle2099.bitcoindoodle.2099
 
 export default setModifierManager(
   (owner) => new SplitModifierManager(owner), SplitViewModifier
