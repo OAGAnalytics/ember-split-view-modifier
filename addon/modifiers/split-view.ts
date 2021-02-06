@@ -2,10 +2,10 @@ import Modifier, { ModifierArgs } from 'ember-modifier';
 import { assign } from '@ember/polyfills';
 import Split from 'split.js';
 
-type SplitViewModifierArgs = ModifierArgs<Split.Options>;
-type SplitInstance = Split.Instance;
-type Dimension = 'width' | 'height';
-type SplitOptions = Record<keyof Split.Options, Split.Options>;
+export type SplitOptions = Split.Options
+export type SplitViewModifierArgs = ModifierArgs<keyof SplitOptions>;
+export type SplitInstance = Split.Instance;
+export type Dimension = 'width' | 'height';
 
 export const createSplit = (el: HTMLElement, args: SplitOptions) => {
   const children = el.children;
@@ -15,6 +15,7 @@ export const createSplit = (el: HTMLElement, args: SplitOptions) => {
   }
 
   const isVertical = args.direction === 'vertical';
+  
   el.style.display = 'flex';
   el.style.flexDirection = isVertical ? 'column' : 'row';
 
