@@ -16,9 +16,9 @@ module.exports = {
   included() {
     this._super.included.apply(this, arguments);
     this.import('vendor/split/dist/split.js', {
-      using: [ { transformation: 'amd', as: 'split.js' } ]
+      using: [{ transformation: 'amd', as: 'split.js' }],
     });
 
     this.import('vendor/ember-split-view-modifier.css');
-  }
+  },
 };
