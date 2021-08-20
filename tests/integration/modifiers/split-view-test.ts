@@ -40,12 +40,16 @@ module('Integration | Modifier | split-view', function (hooks) {
       </div>
     `);
 
-    assert.dom('.gutter').doesNotExist('Gutter does not exist when there arent at least two children.')
+    assert
+      .dom('.gutter')
+      .doesNotExist(
+        'Gutter does not exist when there arent at least two children.'
+      );
   });
 
   test('Passing the direction property with the value vertical splits up its children vertically', async function (this: SplitViewTestContext, assert) {
-    set(this, "direction", "vertical");
-    
+    set(this, 'direction', 'vertical');
+
     await render(hbs`
       <div {{split-view direction=this.direction}} class='container'>
         <div class='left' />
@@ -60,8 +64,8 @@ module('Integration | Modifier | split-view', function (hooks) {
   });
 
   test('Split view modifier rerenders when arguments update', async function (this: SplitViewTestContext, assert) {
-    set(this, "direction", "vertical");
-    
+    set(this, 'direction', 'vertical');
+
     await render(hbs`
       <div {{split-view direction=this.direction}} class='container'>
         <div class='left' />
@@ -69,7 +73,7 @@ module('Integration | Modifier | split-view', function (hooks) {
       </div>
     `);
 
-    set(this, "direction", "horizontal");
+    set(this, 'direction', 'horizontal');
 
     await settled();
 
@@ -83,8 +87,8 @@ module('Integration | Modifier | split-view', function (hooks) {
     const leftSizePercentage = 25;
     const rightSizePercentage = 75;
 
-    set(this, "sizes", [leftSizePercentage, rightSizePercentage])
-    
+    set(this, 'sizes', [leftSizePercentage, rightSizePercentage]);
+
     await render(hbs`
       <div {{split-view sizes=this.sizes}} class='container'>
         <div class='left' />

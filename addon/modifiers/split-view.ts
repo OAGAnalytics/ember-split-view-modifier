@@ -7,7 +7,7 @@ export type SplitViewModifierArgs = ModifierArgs<keyof SplitOptions>;
 export type SplitInstance = Split.Instance;
 export type Dimension = 'width' | 'height';
 
-export const createSplit = (el: HTMLElement, args: SplitOptions) => {
+export const createSplit = (el: HTMLElement, args: SplitOptions): SplitInstance | null => {
   const children = el.children;
 
   if (children.length <= 1) {
